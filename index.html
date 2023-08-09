@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js" ></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section-info">
+            <div class="search-bar">
+                <i class="fa fa-search"></i>
+                <input type="search" onchange="getWeather(this.value)" class="search-input" placeholder="Tìm kiếm tên thành phố">
+            </div>
+            <div class="weather-info">
+                <p class="city-name">---</p>
+                <p class="weather-state">---</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon">
+                <p class="weather-degree">---</p>
+            </div>
+        </div>
+        <div class="section-additional">
+            <div class="row">
+                <div class="item">
+                    <div class="label">Mặt trời mọc</div>
+                    <div class="sunrise">---</div>
+                </div>
+                <div class="item">
+                    <div class="label">Mặt trời lặn</div>
+                    <div class="sunset">---</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">Độ ẩm</div>
+                    <div class="humidity"><span>---</span> %</div>
+                </div>
+                <div class="item">
+                    <div class="label">Gió</div>
+                    <div class="wind-speed"><span>---</span> km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>
